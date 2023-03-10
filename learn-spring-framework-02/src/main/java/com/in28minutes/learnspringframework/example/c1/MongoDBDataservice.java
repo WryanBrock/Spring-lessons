@@ -1,0 +1,17 @@
+package com.in28minutes.learnspringframework.example.c1;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+
+//@Component
+@Repository
+@Primary
+public class MongoDBDataservice implements DataService{
+    @Override
+    public int[] retrieveData(){
+        return new int[] {11,22,33,44,55};
+    }
+
+
+}
